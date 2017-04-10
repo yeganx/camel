@@ -10,7 +10,19 @@
 
   <name>Fabric8 :: Quickstarts :: CDI :: Camel</name>
   <description>Camel route using CDI in a standalone Java Container</description>
+<distributionManagement>
+    <snapshotRepository>
+        <id>my-snapshots</id>
+        <name>My internal repository</name>
+        <url>http://192.168.0.20:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
 
+    <repository>
+        <id>my-releases</id>
+        <name>My internal repository</name>
+        <url>http://192.168.0.20:8081/nexus/content/repositories/releases</url>
+    </repository>
+</distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
